@@ -1,23 +1,6 @@
-
+<app-header></app-header>
 <div class="mainContainer">
-  <div class="header" [ngClass]="headerButtonValue == 10 ? 'red': 'white' ">
-    <app-header (currentOutputValue)="updateHeader($event)"></app-header>
-
-  </div>
-  <div class="body">
-    <div class="sideNav" [ngClass]="sideNavButtonValue == 10 ? 'red': 'white' ">
-      <app-sidenav (currentOutputValue)="updateSideNav($event)"></app-sidenav>
-    </div>
-    <div clas="content">
-      <div class="content_item" [ngClass]="contentButtonValue == 10 ? 'red':
-        'white' ">
-        <app-content (currentOutputValue)="updateContent($event)"></app-content>
-      </div>
-
-    </div>
-  </div>
-  <div class="footer" [ngClass]="footerButtonValue == 10 ? 'red': 'white' ">
-    <app-footer (currentOutputValue)="updateFooter($event)"></app-footer>
-
-  </div>
+  <app-sidenav></app-sidenav>
+  <app-content></app-content>
 </div>
+<app-footer></app-footer>

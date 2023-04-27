@@ -1,2 +1,4 @@
-<p>Header</p>
-<app-button-counter (currentOutputValue)="update($event)"></app-button-counter>
+<div class="header" [appHighlight]="counterValue">
+    <p>Header</p>
+    <app-button (currentOutputValue)="update($event)"></app-button>
+</div>

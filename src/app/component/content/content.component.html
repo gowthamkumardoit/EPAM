@@ -1,4 +1,7 @@
-<p>Content</p>
-<app-button-counter (currentOutputValue)="update($event)"
-    [isDualButton]="isDualButton
-    "></app-button-counter>
+<div class="content">
+    <div class="content_area" [appHighlight]="counterValue">
+        <p>Content</p>
+            <app-button (currentOutputValue)="update($event)"></app-button>
+            <app-button (currentOutputValue)="update($event)"></app-button>
+    </div>
+</div>

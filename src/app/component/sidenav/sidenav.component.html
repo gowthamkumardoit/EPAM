@@ -1,2 +1,4 @@
-<p>Side Nav</p>
-<app-button-counter (currentOutputValue)="update($event)"></app-button-counter>
+<div class="sideNav" [appHighlight]="counterValue">
+    <p>Side Nav</p>
+    <app-button (currentOutputValue)="update($event)"></app-button>
+</div>

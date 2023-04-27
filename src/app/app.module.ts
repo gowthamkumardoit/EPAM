@@ -6,7 +6,8 @@ import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { SidenavComponent } from './component/sidenav/sidenav.component';
 import { ContentComponent } from './component/content/content.component';
-import { ButtonCounterComponent } from './component/shared/button-counter/button-counter.component';
+import { HighlightDirective } from './shared/highlight.directive';
+import { ButtonComponent } from './component/button/button.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +16,10 @@ import { ButtonCounterComponent } from './component/shared/button-counter/button
     FooterComponent,
     SidenavComponent,
     ContentComponent,
-    ButtonCounterComponent
+    HighlightDirective,
+    ButtonComponent
   ],
+  exports:[],
   imports: [
     BrowserModule
   ],

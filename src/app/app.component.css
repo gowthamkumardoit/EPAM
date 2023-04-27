@@ -1,53 +1,14 @@
 .mainContainer {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width:97vw;
-    border:1px solid #000000;
-    text-align: center;
-    float: left;
+    display: flex;
+    flex-direction: row;
 }
 
-.header, .footer {
-    height: 15vh;
-    width: inherit;
-    float: left;
-}
 
-.header {
-    border-bottom: 1px solid #000000;
-}
-
-.footer {
-    border-top: 1px solid #000000;
-}
-.body{
-    height: 70vh;
-    width: 100%; 
-    float: left;   
-}
-.sideNav{
-    width: 25%;
-    float: left;
-    height: 70vh;
-    border-right:1px solid #000000;    
-}
-.content {
-    float: left;   
-}
-.content_item{
-    margin: 150px 0px 0px 400px;
-    float: left;
-    height: 200px;
-    width: 300px;
-    border: 1px solid #000000;
-}
-
-.red{
+.highlight{
     background-color: red;
 }
 
-.white {
-    background-color: #ffffff;
-}
+
 

@@ -1,2 +1,4 @@
-<p>Footer</p>
-<app-button-counter (currentOutputValue)="update($event)"></app-button-counter>
+<div class="footer" [appHighlight]="counterValue">
+    <p>Footer</p>
+    <app-button (currentOutputValue)="update($event)"></app-button>
+</div>
