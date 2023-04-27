@@ -1,0 +1,8 @@
+
+<button type="button" (click)="increment()"> Button Clicked {{currentValue}}
+    time{{currentValue > 1 ? 's': ''}}</button>
+
+<div *ngIf="isDualButton" style="margin-top: 20px;">
+    <button type="button" (click)="increment()"> Button Clicked {{currentValue}}
+        time{{currentValue > 1 ? 's': ''}}</button>
+</div>
